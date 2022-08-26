@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3A37FA28B8703400B8EF5C /* IssuesListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */; };
 		EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAC28B83C99008C9047 /* AppDelegate.swift */; };
 		EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */; };
 		EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FB028B83C99008C9047 /* IssueVisualizationViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IssuesListingTableViewController.swift; path = AdrianoAndersonGustavoLuisPaulo/IssuesListingTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		EBB62FA928B83C99008C9047 /* AdrianoAndersonGustavoLuisPaulo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianoAndersonGustavoLuisPaulo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB62FAC28B83C99008C9047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		EBB62FD628B84427008C9047 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */,
 				EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */,
 				EBB62FDC28B8507C008C9047 /* Issue.swift in Sources */,
+				EB3A37FA28B8703400B8EF5C /* IssuesListingTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
