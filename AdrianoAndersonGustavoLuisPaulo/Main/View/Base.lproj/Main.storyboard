@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reclamação-->
+        <!--Nova reclamação-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="IssueVisualizationViewController" customModule="AdrianoAndersonGustavoLuisPaulo" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" systemColor="systemBlueColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Reclamação" largeTitleDisplayMode="never" id="Fng-Ms-bSn"/>
+                    <navigationItem key="navigationItem" title="Nova reclamação" largeTitleDisplayMode="never" id="Fng-Ms-bSn"/>
                     <connections>
                         <outlet property="buttonSave" destination="Gfd-q3-r1j" id="hRB-qI-HgI"/>
                         <outlet property="textFieldAdress" destination="tUA-e6-Z8d" id="oFI-S4-Q5W"/>
@@ -124,7 +124,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista de reclamações" id="aaQ-kV-MHR">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="oPp-B8-a4r"/>
-                        <barButtonItem key="rightBarButtonItem" title="Novo" id="SkT-IQ-FFE">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SkT-IQ-FFE">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="oyI-4n-TvD"/>
                             </connections>

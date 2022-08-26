@@ -6,15 +6,43 @@
 //
 
 import UIKit
+import CoreData
 
 class IssuesListingTableViewController: UITableViewController {
 
     
-    
+    lazy var fetchedResultsController: NSFetchedResultsController<Issue> = {
+        let fetchRequest: NSFetchRequest<Issue> = Issue.fetchRequest()
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        let fetchedResultController = NSFetchedResultsController(
+            fetchRequest: fetchRequest,
+            managedObjectContext: context,
+            sectionNameKeyPath: nil,
+            cacheName: nil)
+        
+        fetchedResultController.delegate = self
+        return fetchedResultController
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        loadIssues()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? IssueVisualizationViewController,
+              let indexPath = tableView.indexPathForSelectedRow else {return}
+        vc.issue = fetchedResultsController.object(at: indexPath)
+    }
+    
+    private func loadIssues() {
+        do {
+            try fetchedResultsController.performFetch()
+        } catch {
+            print(error)
+        }
     }
 
     // MARK: - Table view data source
@@ -26,15 +54,19 @@ class IssuesListingTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 20
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let issue = fetchedResultsController.object(at: indexPath)
+        cell.textLabel?.text = issue.title
+        cell.detailTextLabel?.text = issue.date
 
         // Configure the cell...
-
+//        cell.configure(issue)
         return cell
     }
     
@@ -85,3 +117,10 @@ class IssuesListingTableViewController: UITableViewController {
     */
 
 }
+
+    extension IssuesListingTableViewController: NSFetchedResultsControllerDelegate {
+        func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+            // Houve alteração na entidade de dados
+            tableView.reloadData()
+        }
+    }
