@@ -13,6 +13,7 @@
 		EBB62FB428B83C99008C9047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB228B83C99008C9047 /* Main.storyboard */; };
 		EBB62FB628B83C9A008C9047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB528B83C9A008C9047 /* Assets.xcassets */; };
 		EBB62FB928B83C9A008C9047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB728B83C9A008C9047 /* LaunchScreen.storyboard */; };
+		EBB62FDC28B8507C008C9047 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FDB28B8507C008C9047 /* Issue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBB62FB528B83C9A008C9047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB62FB828B83C9A008C9047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB62FBA28B83C9A008C9047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB62FDB28B8507C008C9047 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EBB62FAB28B83C99008C9047 /* AdrianoAndersonGustavoLuisPaulo */ = {
 			isa = PBXGroup;
 			children = (
+				EBB62FD928B85058008C9047 /* Shared */,
 				EBB62FCE28B84397008C9047 /* Main */,
 				EBB62FCF28B843A2008C9047 /* Features */,
 				EBB62FB528B83C9A008C9047 /* Assets.xcassets */,
@@ -155,6 +158,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EBB62FD928B85058008C9047 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EBB62FDA28B85060008C9047 /* Model */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EBB62FDA28B85060008C9047 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBB62FDB28B8507C008C9047 /* Issue.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +248,7 @@
 				EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */,
 				EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */,
 				EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */,
+				EBB62FDC28B8507C008C9047 /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
