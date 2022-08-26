@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EB3A37FA28B8703400B8EF5C /* IssuesListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */; };
+		EB3A37FE28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB3A37FC28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld */; };
+		EB3A380128B8782E00B8EF5C /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A380028B8782E00B8EF5C /* UIViewController+Context.swift */; };
 		EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAC28B83C99008C9047 /* AppDelegate.swift */; };
 		EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */; };
 		EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FB028B83C99008C9047 /* IssueVisualizationViewController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IssuesListingTableViewController.swift; path = AdrianoAndersonGustavoLuisPaulo/IssuesListingTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		EB3A37FD28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdrianoAndersonGustavoLuisPaulo.xcdatamodel; sourceTree = "<group>"; };
+		EB3A380028B8782E00B8EF5C /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 		EBB62FA928B83C99008C9047 /* AdrianoAndersonGustavoLuisPaulo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianoAndersonGustavoLuisPaulo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB62FAC28B83C99008C9047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB3A37FB28B8762000B8EF5C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A37FC28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		EB3A37FF28B877FA00B8EF5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB3A380028B8782E00B8EF5C /* UIViewController+Context.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EBB62FA028B83C99008C9047 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +80,8 @@
 		EBB62FAB28B83C99008C9047 /* AdrianoAndersonGustavoLuisPaulo */ = {
 			isa = PBXGroup;
 			children = (
+				EB3A37FF28B877FA00B8EF5C /* Extensions */,
+				EB3A37FB28B8762000B8EF5C /* Files */,
 				EBB62FD928B85058008C9047 /* Shared */,
 				EBB62FCE28B84397008C9047 /* Main */,
 				EBB62FCF28B843A2008C9047 /* Features */,
@@ -249,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */,
+				EB3A37FE28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld in Sources */,
 				EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */,
+				EB3A380128B8782E00B8EF5C /* UIViewController+Context.swift in Sources */,
 				EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */,
 				EBB62FDC28B8507C008C9047 /* Issue.swift in Sources */,
 				EB3A37FA28B8703400B8EF5C /* IssuesListingTableViewController.swift in Sources */,
@@ -468,6 +492,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB3A37FC28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB3A37FD28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodel */,
+			);
+			currentVersion = EB3A37FD28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodel */;
+			path = AdrianoAndersonGustavoLuisPaulo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EBB62FA128B83C99008C9047 /* Project object */;
 }
