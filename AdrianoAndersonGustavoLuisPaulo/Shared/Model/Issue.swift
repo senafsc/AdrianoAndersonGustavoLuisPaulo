@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Issue: Codable {
-    let title: String
-    let id: String
-    let date: String
-    let description: String
-    let location: String
-    let solved: String
-}
+//struct Issue: Codable {
+//    let title: String
+//    let id: String
+//    let date: String
+//    let desc: String
+//    let location: String
+//    let solved: String
+//}

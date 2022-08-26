@@ -20,6 +20,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Título" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCG-Sj-3VW">
+                                <rect key="frame" x="20" y="300" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Data" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Or-Ha-9To">
+                                <rect key="frame" x="20" y="342" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Endereço" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUA-e6-Z8d">
+                                <rect key="frame" x="20" y="384" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Descrição" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul6-y5-gjN">
+                                <rect key="frame" x="20" y="426" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +98,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista de reclamações" id="aaQ-kV-MHR">
                         <barButtonItem key="backBarButtonItem" title="Voltar" id="oPp-B8-a4r"/>
+                        <barButtonItem key="rightBarButtonItem" title="Novo" id="SkT-IQ-FFE">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="oyI-4n-TvD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSr-sq-JwT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -86,7 +115,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nQC-LL-OUR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="3G8-lg-pjx">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -99,6 +128,9 @@
             <point key="canvasLocation" x="-788.40579710144937" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="o8l-7j-6AH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="sao_paulo_image" width="1408" height="792"/>
         <systemColor name="systemBackgroundColor">
