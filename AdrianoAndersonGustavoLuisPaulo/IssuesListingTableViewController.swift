@@ -32,7 +32,7 @@ class IssuesListingTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let vc = segue.destination as? IssueFormViewController,
+        guard let vc = segue.destination as? IssueVisualizationViewController,
               let indexPath = tableView.indexPathForSelectedRow else {return}
         vc.issue = fetchedResultsController.object(at: indexPath)
     }
