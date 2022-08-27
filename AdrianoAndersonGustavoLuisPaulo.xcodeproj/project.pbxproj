@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AE3EC5128B9A5A700EE63D1 /* IssueVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE3EC5028B9A5A700EE63D1 /* IssueVisualizationViewController.swift */; };
 		EB3A37FA28B8703400B8EF5C /* IssuesListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */; };
 		EB3A37FE28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB3A37FC28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld */; };
 		EB3A380128B8782E00B8EF5C /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3A380028B8782E00B8EF5C /* UIViewController+Context.swift */; };
 		EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAC28B83C99008C9047 /* AppDelegate.swift */; };
 		EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */; };
-		EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FB028B83C99008C9047 /* IssueVisualizationViewController.swift */; };
+		EBB62FB128B83C99008C9047 /* IssueFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB62FB028B83C99008C9047 /* IssueFormViewController.swift */; };
 		EBB62FB428B83C99008C9047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB228B83C99008C9047 /* Main.storyboard */; };
 		EBB62FB628B83C9A008C9047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB528B83C9A008C9047 /* Assets.xcassets */; };
 		EBB62FB928B83C9A008C9047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB62FB728B83C9A008C9047 /* LaunchScreen.storyboard */; };
@@ -20,13 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6AE3EC5028B9A5A700EE63D1 /* IssueVisualizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueVisualizationViewController.swift; sourceTree = "<group>"; };
 		EB3A37F928B8703400B8EF5C /* IssuesListingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IssuesListingTableViewController.swift; path = AdrianoAndersonGustavoLuisPaulo/IssuesListingTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		EB3A37FD28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AdrianoAndersonGustavoLuisPaulo.xcdatamodel; sourceTree = "<group>"; };
 		EB3A380028B8782E00B8EF5C /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 		EBB62FA928B83C99008C9047 /* AdrianoAndersonGustavoLuisPaulo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdrianoAndersonGustavoLuisPaulo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB62FAC28B83C99008C9047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB62FAE28B83C99008C9047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBB62FB028B83C99008C9047 /* IssueVisualizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueVisualizationViewController.swift; sourceTree = "<group>"; };
+		EBB62FB028B83C99008C9047 /* IssueFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueFormViewController.swift; sourceTree = "<group>"; };
 		EBB62FB328B83C99008C9047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBB62FB528B83C9A008C9047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB62FB828B83C9A008C9047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AE3EC4C28B9A50A00EE63D1 /* IssueForm */ = {
+			isa = PBXGroup;
+			children = (
+				6AE3EC4F28B9A52A00EE63D1 /* View */,
+				6AE3EC4E28B9A51E00EE63D1 /* Model */,
+				6AE3EC4D28B9A51500EE63D1 /* Controller */,
+			);
+			name = IssueForm;
+			sourceTree = "<group>";
+		};
+		6AE3EC4D28B9A51500EE63D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBB62FB028B83C99008C9047 /* IssueFormViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6AE3EC4E28B9A51E00EE63D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6AE3EC4F28B9A52A00EE63D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		EB3A37FB28B8762000B8EF5C /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +138,7 @@
 		EBB62FCF28B843A2008C9047 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				6AE3EC4C28B9A50A00EE63D1 /* IssueForm */,
 				EBB62FD228B84401008C9047 /* IssueVisualization */,
 				EBB62FD128B843F5008C9047 /* IssuesListing */,
 			);
@@ -142,7 +177,7 @@
 		EBB62FD328B8440D008C9047 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				EBB62FB028B83C99008C9047 /* IssueVisualizationViewController.swift */,
+				6AE3EC5028B9A5A700EE63D1 /* IssueVisualizationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,9 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB62FB128B83C99008C9047 /* IssueVisualizationViewController.swift in Sources */,
+				EBB62FB128B83C99008C9047 /* IssueFormViewController.swift in Sources */,
 				EB3A37FE28B8763E00B8EF5C /* AdrianoAndersonGustavoLuisPaulo.xcdatamodeld in Sources */,
 				EBB62FAD28B83C99008C9047 /* AppDelegate.swift in Sources */,
+				6AE3EC5128B9A5A700EE63D1 /* IssueVisualizationViewController.swift in Sources */,
 				EB3A380128B8782E00B8EF5C /* UIViewController+Context.swift in Sources */,
 				EBB62FAF28B83C99008C9047 /* SceneDelegate.swift in Sources */,
 				EBB62FDC28B8507C008C9047 /* Issue.swift in Sources */,
